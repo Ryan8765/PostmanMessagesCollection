@@ -1,0 +1,225 @@
+{
+    "info": {
+        "name": "Feathers.js REST Service - messages",
+        "_postman_id": "7bcf566a-dfc1-af33-d5a1-07bebf727022",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/messages",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Hello world",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:3030/messages",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3030",
+                    "path": [
+                        "messages"
+                    ]
+                },
+                "description": null
+            },
+            "response": []
+        },
+        {
+            "name": "/messages",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "email",
+                            "value": "antoxa_1@gmail.com",
+                            "type": "text"
+                        },
+                        {
+                            "key": "password",
+                            "value": "ak87c210xx",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:3030/messages",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3030",
+                    "path": [
+                        "messages"
+                    ]
+                },
+                "description": null
+            },
+            "response": []
+        },
+        {
+            "name": "/message/:id",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "email",
+                            "value": "antoxa_1@gmail.com",
+                            "type": "text"
+                        },
+                        {
+                            "key": "password",
+                            "value": "ak87c210xx",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:3030/messages/57bee05c8e9d8245dbe6c997",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3030",
+                    "path": [
+                        "messages",
+                        "57bee05c8e9d8245dbe6c997"
+                    ]
+                },
+                "description": null
+            },
+            "response": []
+        },
+        {
+            "name": "/messages/:id",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Updated text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:3030/messages/57bee05c8e9d8245dbe6c997",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3030",
+                    "path": [
+                        "messages",
+                        "57bee05c8e9d8245dbe6c997"
+                    ]
+                },
+                "description": "update"
+            },
+            "response": []
+        },
+        {
+            "name": "/messages/:id",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Updated text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:3030/messages/57bee05c8e9d8245dbe6c997",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3030",
+                    "path": [
+                        "messages",
+                        "57bee05c8e9d8245dbe6c997"
+                    ]
+                },
+                "description": "patch"
+            },
+            "response": []
+        },
+        {
+            "name": "/messages/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {},
+                "url": {
+                    "raw": "http://localhost:3030/messages/57bee05c8e9d8245dbe6c997",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3030",
+                    "path": [
+                        "messages",
+                        "57bee05c8e9d8245dbe6c997"
+                    ]
+                },
+                "description": null
+            },
+            "response": []
+        }
+    ]
+}
